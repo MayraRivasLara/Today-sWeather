@@ -171,12 +171,12 @@ $(document).ready(function () {
 
     dateHeading.textContent = moment.unix(date).add(1, "d").format("dddd");
 
-    const currentIcon = document.createElement("img");
-    currentIcon.setAttribute(
+    const iconEl = document.createElement("img");
+    iconEl.setAttribute(
       "src",
       "http://openweathermap.org/img/wn/" + icon + ".png"
     );
-    cardBody.appendChild(currentIcon);
+    cardBody.appendChild(iconEl);
 
     currentIcon.setAttribute(
       "src",

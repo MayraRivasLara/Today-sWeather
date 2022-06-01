@@ -125,7 +125,7 @@ $(document).ready(function () {
         if (uvi > 4 && uvi <= 7) {
           spanCurrentUvi.setAttribute("class", "moderate");
         }
-        if (uvi > 7 && uv <= 11) {
+        if (uvi > 7 && uvi <= 11) {
           spanCurrentUvi.setAttribute("class", "high");
         }
 

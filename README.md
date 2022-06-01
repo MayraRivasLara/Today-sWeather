@@ -14,7 +14,9 @@ AS A traveler
 I WANT to see the weather outlook for multiple cities
 SO THAT I can plan a trip accordingly
 
-## Application Image
+## Link
+
+[Click here](https://mayrarivaslara.github.io/Today-sWeather/)
 
 ![TodaysWeather](https://user-images.githubusercontent.com/94599271/171448304-ba1f9cdb-c6b9-4cf5-b9fa-84cc0dcb441c.png)
 
@@ -26,7 +28,6 @@ These are technologies utilized to create Today's Weather App:
 - HTML
 - CSS
 - Bootstrap
-
 
 ## Questions
 If you have any questions, please feel free to contact me <br>

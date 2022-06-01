@@ -21,9 +21,9 @@ $(document).ready(function () {
 
   displayPreSearch();
 
-  let previousSearches = [];
+  var previousSearches = [];
 
-  let citySearches = JSON.parse(localStorage.getItem("previousSearches")) || [];
+  var preSearches = JSON.parse(localStorage.getItem("previousSearches")) || [];
 
   // getting data from API - today's City Weather
   function getCityWeather(city) {
@@ -43,7 +43,7 @@ $(document).ready(function () {
     });
   }
 
-  // function to convert kelvin to celcius.
+  // function to convert kelvin to celsius.
   function kelvinToCelsius(kelvin) {
     return kelvin - 273.15;
   }
@@ -107,11 +107,11 @@ $(document).ready(function () {
         saveToLocalStorage(data.name);
         displayPreSearch();
         spanCity.textContent = data.name;
-        spanDate.textContent = moment.unix(data.dt).format("| ddd,MMM Do YYY");
+        spanDate.textContent = moment.unix(data.dt).format("| ddd,MMM, YYYY");
         spanCurrentTemp.textContent =
-          kelvinToCelsius(data.main.temp).toFixed(2) + "°C";
-        spanCurrentWind.textContent = data.wind.speed + "km/h";
-        spanCurrentHumidity.textContent = data.main.humidity + "%";
+          kelvinToCelsius(data.main.temp).toFixed(2);
+        spanCurrentWind.textContent = data.wind.speed;
+        spanCurrentHumidity.textContent = data.main.humidity;
         return oneCall(data.coord.lon, data.coord.lat);
       })
 
@@ -195,7 +195,7 @@ $(document).ready(function () {
 
     const windEl = document.createElement("p");
     windEl.setAttribute("class", "card-title");
-    windEl.textContent = "Wind: " + wind + "km/h";
+    windEl.textContent = "Wind: " + wind + "m/h";
     ul.appendChild(windEl);
 
     return col;

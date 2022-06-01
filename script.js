@@ -107,7 +107,7 @@ $(document).ready(function () {
         saveToLocalStorage(data.name);
         displayPreSearch();
         spanCity.textContent = data.name;
-        spanDate.textContent = moment.unix(data.dt).format("| ddd,MMM, YYYY");
+        spanDate.textContent = moment.unix(data.dt).format(" | ddd / MMM / YYYY");
         spanCurrentTemp.textContent =
           kelvinToCelsius(data.main.temp).toFixed(2);
         spanCurrentWind.textContent = data.wind.speed;

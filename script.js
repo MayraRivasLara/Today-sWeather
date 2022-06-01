@@ -107,9 +107,12 @@ $(document).ready(function () {
         saveToLocalStorage(data.name);
         displayPreSearch();
         spanCity.textContent = data.name;
-        spanDate.textContent = moment.unix(data.dt).format(" | ddd / MMM / YYYY");
-        spanCurrentTemp.textContent =
-          kelvinToCelsius(data.main.temp).toFixed(2);
+        spanDate.textContent = moment
+          .unix(data.dt)
+          .format(" | ddd / MMM / YYYY");
+        spanCurrentTemp.textContent = kelvinToCelsius(data.main.temp).toFixed(
+          2
+        );
         spanCurrentWind.textContent = data.wind.speed;
         spanCurrentHumidity.textContent = data.main.humidity;
         return oneCall(data.coord.lon, data.coord.lat);
@@ -181,7 +184,7 @@ $(document).ready(function () {
     currentIcon.setAttribute(
       "src",
       `http://openweathermap.org/img/wn/` + icon + `.png`
-    )
+    );
 
     const p = document.createElement("p");
     cardBody.appendChild(p);

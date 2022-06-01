@@ -2,11 +2,21 @@
 
 ## Description
 
-Today's Weather is an interactive application which enables the user to get information regarding the current weather and the next 5 days information in any city around the world. 
+Today's Weather runs in the browser and features a dynamically updated HTML and CSS. 
 
-This application contains a search for and uses a third-party API for it's functionality.
+Today's Weather was build utilizing a Third-party API. Third-party APIs, allow developers to access their data and functionality by making requests with specific parameters to a URL. Developers are often tasked with retrieving data from another application's API and using it in the context of their own.
+
+This application enables the user to get information regarding the weather for the current day and the next 5 days in any city around the world. 
+
+## User Story
+
+AS A traveler
+I WANT to see the weather outlook for multiple cities
+SO THAT I can plan a trip accordingly
 
 ## Application Image
+
+![TodaysWeather](https://user-images.githubusercontent.com/94599271/171448304-ba1f9cdb-c6b9-4cf5-b9fa-84cc0dcb441c.png)
 
 ## Features
 

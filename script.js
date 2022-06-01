@@ -176,6 +176,12 @@ $(document).ready(function () {
       "src",
       "http://openweathermap.org/img/wn/" + icon + ".png"
     );
+    cardBody.appendChild(currentIcon);
+
+    currentIcon.setAttribute(
+      "src",
+      `http://openweathermap.org/img/wn/` + icon + `.png`
+    )
 
     const p = document.createElement("p");
     cardBody.appendChild(p);

@@ -117,4 +117,73 @@ input {
     text-align: center;
 }
 
-/
+/* UV color index depending on the temperature */
+.low {
+    background-color: rgb(151, 246, 8);
+}
+
+.moderate {
+    background-color: orange;
+}
+
+.high {
+    background-color: #dd2323;
+}
+
+
+@media screen and (max-width: 1700px) {
+    #input-city, #submit-city, input, hr {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1500px) {
+    #weather-cards {
+      flex-direction: column;
+    }
+.card {
+        width: 200px;
+    }
+      }
+    
+@media screen and  (max-width: 1000px) {
+        #weather-cards {
+          flex-direction: column;
+        }
+    
+.card {
+        width: 200px;
+    }
+      }
+      
+@media screen and (max-width: 500px) {
+    h1 {
+          font-size: 25px;
+          padding-top: 15px;
+        }
+    
+    label {
+          font-size: 20px;
+      }
+    
+    #current-forecast {
+          max-width: 95%;
+      }
+    
+    h2 {
+          font-size: 22px;
+      }
+    
+    h3 {
+          font-size: 20px;
+      }
+    
+    #weather-cards {
+          flex-direction: column;
+          padding-bottom: 20px;
+      }
+    
+    .card {
+          width: 200px;
+      }
+    }
